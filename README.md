@@ -1,21 +1,72 @@
-<<<<<<< HEAD
-# Arias-support
-app mobile android/IOS
-=======
-# arias_support
+# Arias Support 🎧📞
 
-A new Flutter project.
+Application de **service client** développée pour **Arias**, afin de centraliser et simplifier la gestion des demandes d’assistance.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Objectifs du projet
+- Offrir une plateforme moderne pour le **support client**  
+- Améliorer la **réactivité** et la **qualité du suivi**  
+- Centraliser les demandes (tickets, chat, audio/vidéo, emails)  
+- Fournir une **interface intuitive** et rapide  
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🛠️ Fonctionnalités principales
+- 📩 Création et suivi des tickets d’assistance  
+- 💬 Messagerie instantanée entre client et support  
+- 📂 Historique des interactions avec les clients  
+- 🔔 Notifications en temps réel  
+- 🌙 Thème clair/sombre adaptable au système ou manuel  
+- 📱 Application mobile (Flutter)  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
->>>>>>> 4b78a70 (Initial commit)
+---
+
+## 🏗️ Stack technique
+- **Frontend** : Flutter (Dart)  
+- **Backend** : API REST en PHP (Laravel / ou natif selon implémentation)  
+- **Base de données** : MySQL / MariaDB  
+- **Authentification** : JWT / Session sécurisée  
+- **Déploiement** : Ubuntu Server + Nginx  
+
+---
+
+## 📷 Aperçu (screenshots à venir)
+*(Ici tu pourras ajouter des images de l’interface : login, tableau de bord, page support, etc.)*
+
+---
+
+## 📦 Installation & Déploiement
+
+### 1. Cloner le dépôt
+```bash
+git clone https://github.com/Tatsuyathehacker/Arias_support.git
+cd Arias_support
+```
+### 2. Installer les dépendances Flutter
+flutter pub get
+
+
+### 3. Lancer l’application en debug
+
+flutter run
+
+### 4. Générer un APK
+
+flutter build apk --release
+
+
+## 🔮 Prochaines évolutions
+
+  📊 Tableau de bord analytique (stats support)
+
+  🤖 Chatbot IA pour assistance automatique
+
+  🔐 Intégration SSO / OAuth2
+
+  🌍 Support multilingue (français, anglais, espagnol)
+
+## 👨‍💻 Auteur
+
+Projet développé par Arias Tech
+Mainteneur principal : @Tatsuyathehacker
