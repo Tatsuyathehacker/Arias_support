@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../delyad_animations.dart';
 import 'dashboard_support.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 const kBlue = Color(0xFF2E8BD8);
 
@@ -47,13 +48,12 @@ class _LoginCompanyPageState extends State<LoginCompanyPage> {
                   children: [
                     DelayedAnimations(
                       delay: 400,
-                      child: Text('arias\ninformatique',
-                          style: TextStyle(
-                            color: kBlue,
-                            fontSize: 30,
-                            fontWeight: FontWeight.w700,
-                            height: 1.0,
-                          )),
+                      child: SizedBox(
+                        height: 200,
+                        child: Image.asset(
+                          'assets/images/logo_arias_bleu_nobackground.png',
+                        ),
+                      ),
                     ),
                     const SizedBox(height: 28),
                     DelayedAnimations(

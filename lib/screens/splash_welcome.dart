@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../delyad_animations.dart';
 import 'login_company.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 const kBlue = Color(0xFF2E8BD8);
 
@@ -20,29 +21,42 @@ class SplashWelcome extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SizedBox(height: size.height * 0.12),
+
+              // Bloc logo + texte
               DelayedAnimations(
                 delay: 700,
                 child: Column(
                   children: [
-                    // Remplace par ton Image.asset(logo) si tu veux
-                    Text('arias\ninformatique',
+                    DelayedAnimations(
+                      delay: 1500,
+                      child: SizedBox(
+                        height: 450,
+                        child: Image.asset(
+                          'assets/images/logo_arias-nobackground.png',
+                          fit: BoxFit.contain,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 20),
+                    DelayedAnimations(
+                      delay: 2000,
+                      child: Text(
+                        'Support Technique',
                         textAlign: TextAlign.center,
-                        style: const TextStyle(
+                        style: GoogleFonts.nunito(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
                           color: Colors.white,
-                          fontSize: 42,
-                          height: 1.05,
-                          fontWeight: FontWeight.w700,
-                          letterSpacing: 1.0,
-                        )),
-                    const SizedBox(height: 16),
-                    const Text(
-                      'Support client',
-                      style: TextStyle(color: Colors.white, fontSize: 18),
+                        ),
+                      ),
                     ),
                   ],
                 ),
               ),
+
               const Spacer(),
+
+              // Bouton Continuer
               DelayedAnimations(
                 delay: 1400,
                 child: SizedBox(
@@ -54,7 +68,9 @@ class SplashWelcome extends StatelessWidget {
                     ),
                     onPressed: () {
                       Navigator.pushReplacementNamed(
-                          context, LoginCompanyPage.routeName);
+                        context,
+                        LoginCompanyPage.routeName,
+                      );
                     },
                     child: const Text('Continuer'),
                   ),

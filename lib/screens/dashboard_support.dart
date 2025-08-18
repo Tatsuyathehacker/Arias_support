@@ -3,6 +3,7 @@ import '../delyad_animations.dart';
 import 'create_ticket.dart';
 import 'sav_request.dart';
 import 'faq_page.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 const kBlue = Color(0xFF2E8BD8);
 const kBg = Color(0xFFF6F7FA);
