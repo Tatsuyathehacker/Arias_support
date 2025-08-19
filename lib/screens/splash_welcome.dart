@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../delyad_animations.dart';
 import 'login_company.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'arias_intervention.dart';
 
 const kBlue = Color(0xFF2E8BD8);
 
@@ -69,7 +70,7 @@ class SplashWelcome extends StatelessWidget {
                     onPressed: () {
                       Navigator.pushReplacementNamed(
                         context,
-                        LoginCompanyPage.routeName,
+                        InterventionFormPage.routeName,
                       );
                     },
                     child: const Text('Continuer'),

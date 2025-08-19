@@ -35,7 +35,7 @@ class DashboardSupport extends StatelessWidget {
                         delay: 100,
                         child: Image.asset(
                           'assets/images/logo_arias-nobackground.png',
-                        height: 80, // taille du logo
+                        height: 100, // taille du logo
                         fit: BoxFit.contain,
                         ),
                       ),

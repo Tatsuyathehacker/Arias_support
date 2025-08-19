@@ -5,6 +5,7 @@ import 'screens/dashboard_support.dart';
 import 'screens/create_ticket.dart';
 import 'screens/sav_request.dart';
 import 'screens/faq_page.dart';
+import 'screens/arias_intervention.dart';
 
 const kBlue = Color(0xFF2E8BD8);
 const kBg = Color(0xFFF6F7FA);
@@ -59,6 +60,7 @@ class AriasApp extends StatelessWidget {
         CreateTicketPage.routeName: (_) => const CreateTicketPage(),
         SavRequestPage.routeName: (_) => const SavRequestPage(),
         FaqPage.routeName: (_) => const FaqPage(),
+        InterventionFormPage.routeName: (_) => const InterventionFormPage(),
       },
     );
   }
